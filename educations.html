@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Proje</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+    <style>
+        html,
+        body,
+        main {
+            height: 100%;
+        }
+
+        .menu {
+            width: 100%;
+            ;
+        }
+
+        .menu ul {
+            text-align: left;
+            display: inline;
+            margin: 0;
+            padding: 15px 4px 17px 0;
+            list-style: none;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+
+        }
+
+        .menu ul li {
+            font: bold 12px/18px sans-serif;
+            display: inline-block;
+            margin-right: -4px;
+            position: relative;
+            padding: 15px 20px;
+            background: #fff;
+            cursor: pointer;
+            transition: all 0.2s;
+            width: 15%;
+        }
+
+        .menu ul li:hover {
+            background: #555;
+            color: #fff;
+        }
+
+        .menu ul li ul {
+            padding: 0;
+            position: absolute;
+            top: 48px;
+            left: 0;
+            width: 150px;
+            box-shadow: none;
+            display: none;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.2s;
+        }
+
+        .menu ul li ul li {
+            background: #555;
+            display: block;
+            color: #fff;
+            text-shadow: 0 -1px 0 #000;
+            width: 100%;
+        }
+
+        .menu ul li ul li:hover {
+            background: #666;
+        }
+
+        .menu ul li:hover ul {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .div4 {
+            margin-top: 2%;
+            padding-top: 2%;
+            display: grid;
+            border-top-style: groove;
+            width: 100%;
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        LOGO
+                    </a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="about.html">Hakkımızda</a></li>
+                    <li><a href="#">Makaleler</a></li>
+                    <li class="active"><a href="educations.html">Eğitimler</a></li>
+                    <li><a href="#">Protfolyo</a></li>
+                    <li><a href="#">İletişim</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-auto" style="width: 17%;">
+            <nav class="navbar navbar-inverse" style="width: 100%;">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Anasayfa</a></li>
+                        <li class="active"><a href="educations.html">Egitimler</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main style="padding:1%; border-style: groove;">
+        <div class="menu">
+            <ul>
+                <li>
+                    Sırala
+                    <ul>
+                        <li>A' dan Z' ye</li>
+                        <li>Z' den A' ya</li>
+                    </ul>
+                </li>
+                <li>
+                    Seviye
+                    <ul>
+                        <li>Başlangıç</li>
+                        <li>Orta</li>
+                        <li>Uzman</li>
+                    </ul>
+                </li>
+                <li>
+                    Dil
+                    <ul>
+                        <li>Türkçe</li>
+                        <li>İngilizce</li>
+                    </ul>
+                </li>
+                <li>
+                    Süresi
+                    <ul>
+                        <li>0-1 saat</li>
+                        <li>1-3 saat</li>
+                        <li>3-6 saat</li>
+                        <li>6-17 saat</li>
+                        <li>17+ saat</li>
+                    </ul>
+                </li>
+                <li style="width: 40%;">
+                    Görünüm:
+                    <button style="width: 20%; float: right; height: 30px; margin-right: 2%;">
+                        <table style="width: 100%; height:100%">
+                            <tr style="border-style: groove; border-width: 1px;">
+                                <td style="border-style: groove; border-width: 1px;"></td>
+                            </tr>
+                            <tr style="border-style: groove; border-width: 1px;">
+                                <td style="border-style: groove; border-width: 1px;"></td>
+                            </tr>
+                            <tr style="border-style: groove; border-width: 1px;">
+                                <td style="border-style: groove; border-width: 1px;"></td>
+                            </tr>
+                        </table>
+                    </button>
+                    <button style="width: 20%; float: right; height: 30px; margin-left: 10%; margin-right: 10%;">
+                        <table style="width: 100%; height: 100%;">
+                            <tr style="border-style: groove; border-width: 1px;">
+                                <td style="border-style: groove; border-width: 1px;"></td>
+                                <td style="border-style: groove; border-width: 1px;"></td>
+                            </tr>
+                        </table>
+                    </button>
+                    <button style="width: 20%; float: right; height: 30px; ">
+                        <table style="width: 100%; height: 100%;">
+                            <tr style="border-style: groove; border-width: 1px;">
+                                <td style="border-style: groove; border-width: 1px;"></td>
+                                <td style="border-style: groove; border-width: 1px;"></td>
+                                <td style="border-style: groove; border-width: 1px;"></td>
+                            </tr>
+                        </table>
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <div style="height:80%;">
+            <div style="float: right; width: 25%; border-style: groove; text-align: right;">
+                Kategoriler
+                <hr style="border-width: 2px;">
+
+                <div class="row">
+                    <div class="col-md-5">
+                        <button style="width:100%; background-color: rgba(202, 68, 113, 0.685);">.Net
+                            Core</button>
+                    </div>
+                    <div class="col-md-7">
+                        <button style="width:100%; background-color: aqua; margin-bottom: 2%;">.Net Freamwork</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <button style="width:100%; background-color: rgb(231, 193, 123); margin-right: 1%;">C#</button>
+                    </div>
+                    <div class="col-md-5">
+                        <button
+                            style="width:100%; background-color: rgb(236, 127, 37); margin-bottom: 2%;">React</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <button style="width:100%; background-color: orange;">Angular</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button style="width:100%; background-color: rgb(101, 228, 101);">Vue JS</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button style="width:100%; background-color: rgb(227, 240, 109);">Blazor</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <button style="width:100%; background-color: rgb(165, 115, 165);">Dev Extream</button>
+                    </div>
+                    <div class="col-md-6">
+                        <button style="width:100%; background-color: rgb(95, 121, 95);">Dev Exspress</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-auto" style="border-style: groove; width: 15%; padding-left: 1%;">React için 3 Sonuç
+            </div>
+            <div class="row" style="width: 75%; border-style: groove; margin-left: 0.15%; padding-left: 2%;">
+                <div class="row" style="margin-right: 1%; border-style: groove; width: 32%; float: left;">
+                    <div style="height:100px">
+                        <img src="img/1.jpg" width="100%" height="100%">
+                    </div>
+                    <div style="padding: 2%;">
+                        Eğitim Başlığı<br>
+                        Eğitim İçreiği<br>
+                        Eğitimci Adı<br>
+                        Hangi dilde verildiği<br>
+                        Seviye bilgisi<br>
+                    </div>
+                    <hr style="border-style: inset; border-width: 1px;">
+                    <div style="text-align: center;">
+                        <label>
+                            ÜCRETİ <br>
+                            3500TL
+                        </label>
+                    </div>
+                </div>
+                <div class="row"
+                    style="margin-right: 1%; border-style: groove; width: 32%; float: left; margin-left: 1%;">
+                    <div style="height:100px">
+                        <img src="img/1.jpg" width="100%" height="100%">
+                    </div>
+                    <div style="padding: 2%;">
+                        Eğitim Başlığı<br>
+                        Eğitim İçreiği<br>
+                        Eğitimci Adı<br>
+                        Hangi dilde verildiği<br>
+                        Seviye bilgisi<br>
+                    </div>
+                    <hr style="border-style: inset; border-width: 1px;">
+                    <div style="text-align: center;">
+                        <label>
+                            ÜCRETİ <br>
+                            3500TL
+                        </label>
+                    </div>
+                </div>
+                <div class="row"
+                    style="margin-right: 1%; border-style: groove; width: 32%; float: left; margin-left: 1%;">
+                    <div style="height:100px">
+                        <img src="img/1.jpg" width="100%" height="100%">
+                    </div>
+                    <div style="padding: 2%;">
+                        Eğitim Başlığı<br>
+                        Eğitim İçreiği<br>
+                        Eğitimci Adı<br>
+                        Hangi dilde verildiği<br>
+                        Seviye bilgisi<br>
+                    </div>
+                    <hr style="border-style: inset; border-width: 1px;">
+                    <div style="text-align: center;">
+                        <label>
+                            ÜCRETİ <br>
+                            3500TL
+                        </label>
+                    </div>
+                </div>
+
+                <div class="row"
+                    style="margin-right: 1%; border-style: groove; width: 49%; float: left; margin-top: 2%;">
+                    <div style="height:100px">
+                        <img src="img/1.jpg" width="100%" height="100%">
+                    </div>
+                    <div style="padding: 2%;">
+                        Eğitim Başlığı<br>
+                        Eğitim İçreiği<br>
+                        Eğitimci Adı<br>
+                        Hangi dilde verildiği<br>
+                        Seviye bilgisi<br>
+                    </div>
+                    <hr style="border-style: inset; border-width: 1px;">
+                    <div style="text-align: center;">
+                        <label>
+                            ÜCRETİ <br>
+                            3500TL
+                        </label>
+                    </div>
+                </div>
+
+                <div class="row"
+                    style="margin-right: 1%; border-style: groove; width: 49%; float: left; margin-left: 1%;  margin-top: 2%;">
+                    <div style="height:100px">
+                        <img src="img/1.jpg" width="100%" height="100%">
+                    </div>
+                    <div style="padding: 2%;">
+                        Eğitim Başlığı<br>
+                        Eğitim İçreiği<br>
+                        Eğitimci Adı<br>
+                        Hangi dilde verildiği<br>
+                        Seviye bilgisi<br>
+                    </div>
+                    <hr style="border-style: inset; border-width: 1px;">
+                    <div style="text-align: center;">
+                        <label>
+                            ÜCRETİ <br>
+                            3500TL
+                        </label>
+                    </div>
+                </div>
+
+                <div class="row" style="float: left; border-style: groove; width: 100%; margin-top: 2%;">
+                    <div class="row" style="padding: 1%;  height: 80%;">
+                        <div class="col-md-4" style="width: 20%;">
+                            <img src="img/1.jpg" width="100%" height="100px">
+                        </div>
+                        <div class="col-md-6" style="width: 78%; padding: 2%; border-style: groove;">
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Molestias sequi
+                            inventore, beatae suscipit laborum explicabo
+                            id dolorem deleniti eaque laudantium
+                            iste debitis iusto quas vero magnam?
+                            Eveniet consectetur asperiores sint.
+                        </div>
+                        <div class="col-xs-8" style="margin-left: 1%; border-style: groove; border-color: orange;">
+                            Kamil Kaplan
+                        </div>
+                        <div class="col-xs-9" style="margin-left: 1%; border-style: groove; border-color: orange;">
+                            @react
+                        </div>
+                        <div class="col-xs-2" style="float: right;">
+                            <button>Devamını -></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style="float: left; border-style: groove; width: 100%; margin-top: 1%;">
+                    <div class="row" style="padding: 1%;  height: 80%;">
+                        <div class="col-md-4" style="width: 20%;">
+                            <img src="img/1.jpg" width="100%" height="100px">
+                        </div>
+                        <div class="col-md-6" style="width: 78%; padding: 2%; border-style: groove;">
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Molestias sequi
+                            inventore, beatae suscipit laborum explicabo
+                            id dolorem deleniti eaque laudantium
+                            iste debitis iusto quas vero magnam?
+                            Eveniet consectetur asperiores sint.
+                        </div>
+                        <div class="col-xs-8" style="margin-left: 1%; border-style: groove; border-color: orange;">
+                            Kamil Kaplan
+                        </div>
+                        <div class="col-xs-9" style="margin-left: 1%; border-style: groove; border-color: orange;">
+                            @react
+                        </div>
+                        <div class="col-xs-2" style="float: right;">
+                            <button>Devamını -></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="div4">
+            <div>
+                <p style="float: left; padding-left: 45%;">2022 @ Tüm Hakları ile saklıdır</p>
+                <img src="img/linkedin.png" style="float: right;">
+                <img src="img/instagram.png" style="float: right;">
+                <img src="img/twitter.png" style="float: right;">
+                <img src="img/facebook.png" style="float: right;">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
