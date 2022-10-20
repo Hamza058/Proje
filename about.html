@@ -7,9 +7,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
     <style>
         html,
         body,
@@ -23,49 +20,53 @@
             height: 100px;
             border: 1px solid #000;
             color: #FFF;
-            text-align: center;
-            margin-top: 2%;
-            margin-left: 7.5%;
+            margin-top: 10%;
+            margin-left: 10%;
+            padding-top: 1%;
             transform: rotate(45deg);
-            float: left;
+        }
+
+        .divRow {
+            border-style: groove;
+            width: 100% !important;
+            margin-left: 0.005%;
+            padding-top: 0.5%;
+            padding-bottom: 0.5%;
+            margin-bottom: 1%;
         }
 
         .text {
-            padding: 40%;
+            padding: 35%;
             transform: rotate(-45deg);
-        }
-
-        .border {
-            border-style: groove;
-            width: 32%;
-            float: left;
-            height: 100%;
-            margin-left: 1%;
-            margin-bottom: 2%;
-            text-align: center;
         }
 
         .yuvarlak {
             border-radius: 50%;
-            width: 30%;
-            height: 30%;
+            max-width: 100%;
+            height: 300px;
             margin-bottom: 2%;
         }
 
-        .title {
-            border-style: groove;
-            height: 15%;
-            padding-top: 1%;
-            margin: 1%;
-        }
-
         .div4 {
+            color: black;
+            text-align: center;
             margin-top: 2%;
             padding-top: 2%;
             display: grid;
             border-top-style: groove;
             width: 100%;
             background-color: gray;
+        }
+
+        .divNav {
+            width: 13%;
+            background-color: rgb(59, 58, 58);
+            height: 5%;
+            padding-top: 0.8%;
+            padding-left: 1%;
+            color: white;
+            border-bottom-right-radius: 50%;
+            border-top-right-radius: 50%;
         }
     </style>
 </head>
@@ -84,22 +85,15 @@
                     <li class="active"><a href="about.html">Hakkımızda</a></li>
                     <li><a href="#">Makaleler</a></li>
                     <li><a href="educations.html">Eğitimler</a></li>
-                    <li><a href="#">Protfolyo</a></li>
+                    <li><a href="portfolyo.html">Protfolyo</a></li>
                     <li><a href="#">İletişim</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        <div class="container-auto" style="width: 17%;">
-            <nav class="navbar navbar-inverse" style="width: 100%;">
-                <div class="container-fluid">
-                    <ul class="nav navbar-nav">
-                        <li><a href="index.html">Anasayfa</a></li>
-                        <li class="active"><a href="about.html">Hakkımızda</a></li>
-                    </ul>
-                </div>
-            </nav>
+        <div class="container-auto divNav">
+            Anasayfa / Hakkımızda
         </div>
         <div class="container-auto" style="height: 40%; padding: 1%;">
             <img src="img/1.jpg" width="100%" height="100%">
@@ -125,61 +119,89 @@
             metnin eski lineer kısıtlarının aşılması anlamına gelir.
         </div>
         <hr width="100%" style="border-width: 2px; border-color:orange">
-        <div class="container-auto" style="height: 20%; border-style: groove; margin: 1%; padding-top:1%;">
-            <div class="dörtgen" style="background-color: rgb(95, 109, 185);">
-                <p class="text">Mobil<br />%20</p>
+        <h2 style="text-align: center;">Gerçekliştirdiğimiz Projeler</h2>
+
+        <div class="row container-auto" style="width: 98%; height: 20% !important; margin-left: 1%; border-style: groove; padding-top: 2%;">
+            <div class="col-md-2">
+                <div class="dörtgen" style="background-color: rgb(95, 109, 185);">
+                    <p class="text">Mobil<br />%20</p>
+                </div>
             </div>
-            <div class="dörtgen" style="background-color: rgba(233, 129, 190, 0.904);">
-                <p class="text">Masaüstü<br />%5</p>
+            <div class="col-md-2">
+                <div class="dörtgen" style="background-color: rgba(233, 129, 190, 0.904);">
+                    <p class="text">Masaüstü<br />%5</p>
+                </div>
             </div>
-            <div class="dörtgen" style="background-color: rgba(255, 217, 0, 0.781);">
-                <p class="text">Web<br />%45</p>
+            <div class="col-md-2">
+                <div class="dörtgen" style="background-color: rgba(255, 217, 0, 0.781);">
+                    <p class="text">Web<br />%45</p>
+                </div>
             </div>
-            <div class="dörtgen" style="background-color: rgba(172, 255, 47, 0.678);">
-                <p class="text">Eğitim<br />%10</p>
+            <div class="col-md-2">
+                <div class="dörtgen" style="background-color: rgba(172, 255, 47, 0.678);">
+                    <p class="text">Eğitim<br />%10</p>
+                </div>
             </div>
-            <div class="dörtgen" style="background-color: rgb(100, 216, 210);">
-                <p class="text">Grafik<br />%5</p>
+            <div class="col-md-2">
+                <div class="dörtgen" style="background-color: rgb(100, 216, 210);">
+                    <p class="text">Grafik<br />%5</p>
+                </div>
             </div>
-            <div class="dörtgen" style="background-color: rgba(255, 0, 221, 0.486);">
-                <p class="text">Diğer<br />%15</p>
+            <div class="col-md-2">
+                <div class="dörtgen" style="background-color: rgba(255, 0, 221, 0.486);">
+                    <p class="text">Diğer<br />%15</p>
+                </div>
             </div>
         </div>
-        <div class="container" style="height: 30%;">
-            <div class="container-auto border">
-                <img src="img/1.jpg" class="yuvarlak">
-                <div class="column title">
+
+        <br>
+
+        <div class="row divRow" style="text-align: center;">
+            <div class="col-md-4" style="border-style: groove; margin-bottom:1%;">
+                <div class="col-xs-12">
+                    <img src="img/face3.png" class="yuvarlak">
+                </div>
+                <div class="col-xs-12" style="border-top-style: groove;">
                     Title
                 </div>
-                <div class="colum title" style="height: 47%; text-align: left !important;">
-                    Text
+                <div class="col-xs-12" style="border-top-style: groove;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Perferendis excepturi consequuntur soluta
+                    laboriosam, error deleniti rem nihil doloribus,
+                    minus ea, enim sint. Facilis modi illo beatae
+                    sed, dolorum accusamus voluptates.
                 </div>
             </div>
-            <div class="container-auto border">
-                <img src="img/1.jpg" class="yuvarlak">
-                <div class="column title">
+
+            <div class="col-md-4" style="border-style: groove; margin-bottom:1%;">
+                <div class="col-xs-12">
+                    <img src="img/face1.png" class="yuvarlak">
+                </div>
+                <div class="col-xs-12" style="border-top-style: groove;">
                     Title
                 </div>
-                <div class="colum title" style="height: 47%; text-align: left !important;">
-                    Text
+                <div class="col-xs-12" style="border-top-style: groove;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Perferendis excepturi consequuntur soluta
+                    laboriosam, error deleniti rem nihil doloribus,
+                    minus ea, enim sint. Facilis modi illo beatae
+                    sed, dolorum accusamus voluptates.
                 </div>
             </div>
-            <div class="container-auto border">
-                <img src="img/1.jpg" class="yuvarlak">
-                <div class="column title">
+
+            <div class="col-md-4" style="border-style: groove; margin-bottom:1%;">
+                <div class="col-xs-12">
+                    <img src="img/face2.png" class="yuvarlak">
+                </div>
+                <div class="col-xs-12" style="border-top-style: groove;">
                     Title
                 </div>
-                <div class="colum title" style="height: 47%; text-align: left !important;">
-                    Text
-                </div>
-            </div>
-            <div class="container-auto border" style="margin-left:34%;">
-                <img src="img/1.jpg" class="yuvarlak">
-                <div class="column title">
-                    Title
-                </div>
-                <div class="colum title" style="height: 47%; text-align: left !important;">
-                    Text
+                <div class="col-xs-12" style="border-top-style: groove;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Perferendis excepturi consequuntur soluta
+                    laboriosam, error deleniti rem nihil doloribus,
+                    minus ea, enim sint. Facilis modi illo beatae
+                    sed, dolorum accusamus voluptates.
                 </div>
             </div>
         </div>
@@ -195,6 +217,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
